@@ -1,0 +1,117 @@
+<html>
+
+	<head>
+	
+		<title>game1</title>
+		
+	
+		<style type="text/css">
+		
+		
+		
+		
+		
+		</style>
+
+	</head>	
+	
+	<body>
+	
+		<p> how many finer am I holding up?</p>
+		
+		<input type="text" id="mathtext"></input>
+		
+		<button id="mathbutton">guess</button>
+	
+		
+		<p> how many fingers are YOU holding up?</p>
+		
+		<select type="text" id="mathtext2">
+		
+			<option>0</option>
+		
+			<option>1</option>
+		
+			<option>2</option>
+			
+			<option>3</option>
+			
+			<option>4</option>
+			
+			<option>5</option>
+		
+		</select>
+		
+		<button id="mathbutton2">guess</button>
+		
+		
+		
+	<script type="text/javascript">
+	
+	document.getElementById("mathbutton").onclick = function () {
+	
+		var x = document.getElementById("mathtext").value;
+		
+		var y = (Math.floor(Math.random() * 6));
+		
+		if (x == y) {
+		
+		alert("CORRECT!!")
+		
+		} else {
+		
+		alert("nope x was " + y )
+		
+		}
+		
+	    }
+		
+		
+		
+		
+		
+		
+		
+	document.getElementById("mathbutton2").onclick = function() {
+
+			var mynumber = document.getElementById("mathtext2").value;
+			
+			var gotit = false;
+			
+			var numberofguesses = 1;
+			
+			while (gotit == false) {
+			
+				var guess = (Math.floor(Math.random() * 6));
+				
+				if (guess == mynumber) {
+				
+				gotit = true;
+				
+				alert ("computer is right! It was " + guess + " it took me" + numberofguesses + "guesses");
+				
+				//computer is right!
+				
+				} else { 
+				
+				numberofguesses++;
+				
+				// computer is wrong
+				
+				}
+
+			}
+		
+		}
+		
+		
+		
+	
+	</script>
+	
+	</body>
+	
+</html>	
+			
+				
+				

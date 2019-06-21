@@ -1,0 +1,104 @@
+<html>
+
+	<head>
+	
+		<title> javascript</title>
+		
+	</head>
+
+	<body>
+
+		<p id="text">hello world</p>
+		
+		<button id="mrbutton">changetext</button>
+
+		<button onclick="alert('hi')">Click me!</button>
+		
+		<button id="append"> add to statement </button>
+	
+		<p id="secondp">javascript is ...</p>
+		
+		<button id="pbutton">click to change</button>
+		
+		<p id="nothing"></p>
+		
+		<p id="tobe">Style me!</p>
+		
+		<button id="styler">styler</button>
+		
+		<button id="magic">make something appear </button>
+	
+		<script type="text/javascript">
+	
+		
+			alert("page is loaded");
+			
+			// This is a comment 
+			
+			/*
+			 This is how you comment
+			 in more than one line
+			
+			*/
+			
+			
+			// this is the first getElementById experience
+			
+			document.getElementById("text").innerHTML = "Bye World ";
+			
+			
+			
+			document.getElementById("mrbutton").onclick = function()  {
+			
+				document.getElementById("mrbutton"). innerHTML = "button clicked!!!";
+			
+			}
+			
+			// this deals with javascript is ... on line 17
+			
+			document.getElementById("pbutton").onclick = function()  {
+			
+				document.getElementById("secondp"). innerHTML = "Hi dudes";
+				
+				}
+				
+			//this deals with appending javascript
+			
+			document.getElementById("append").onclick = function()  {
+			
+				document.getElementById("text"). innerHTML = "hello " - document.getElementById("text"). innerHTML + "says me";
+				
+				
+				}
+				
+			
+			document.getElementById("magic").onclick = function()  {
+
+				document.getElementById("nothing").innerHTML = "hi";
+			
+
+				
+			}
+			
+			//style in javascript
+			
+			document.getElementById("styler").onclick = function()  {
+			
+				document.getElementById("tobe").style.color = "red";
+				
+				document.getElementById("tobe").style.fontSize = "50px";
+				
+				document.getElementById("tobe").innerHTML = "Howdy!";
+			
+			
+			}
+			
+			
+			
+		
+		
+		</script>
+
+	</body>
+	
+</html>	
